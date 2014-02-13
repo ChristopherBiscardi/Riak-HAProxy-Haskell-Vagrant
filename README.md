@@ -1,6 +1,13 @@
 Riak-HAProxy-Haskell-Vagrant
 ============================
 
+## Prerequisites:
+
+* Vagrant
+* VirtualBox
+```
+vagrant box add saucy-amd http://cloud-images.ubuntu.com/vagrant/saucy/current/saucy-server-cloudimg-amd64-vagrant-disk1.box
+```
 This Vagrantfile contains instructions and shell provisioners for:
 
 ## Riak Cluster (default 5 nodes)
@@ -22,7 +29,7 @@ HAProxy uses `vagrantfiles/haproxy.config` as a config file.
 vagrant up haproxy
 ```
 
-## Haskell 7.6.3.
+## Haskell 7.6.3 (Current Version on Ubuntu 13/Saucy)
 
 ### Boot Haskell Node (IP: 192.168.50.2)
 ```bash
